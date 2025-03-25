@@ -111,21 +111,68 @@
 
  //resultados das comparacoes
 
- printf("população: carta 1 VENCEU \n");
- printf("area: carta 2 VENCEU \n");
- printf("pib: carta 1 VENCEU \n");
- printf("pontos turisticos: carta 1 VENCEU \n");
- printf("densidade populacional: carta 1 VENCEU \n");
- printf("pib per capita: carta 2 VENCEU \n");
- printf("super poder: carta 1 VENCEU \n");
+ printf("população: carta 1 (fortaleza) VENCEU \n");
+ printf("area: carta 2 (salvador) VENCEU \n");
+ printf("pib: carta 1 (fortaleza) VENCEU \n");
+ printf("pontos turisticos: carta 1 (fortalezaa) VENCEU \n");
+ printf("densidade populacional: carta 1 (fortaleza) VENCEU \n");
+ printf("pib per capita: carta 2 (salvador) VENCEU \n");
+ printf("super poder: carta 1 (fortaleza) VENCEU \n");
+
+ printf("______________________________\n");
+
+
+
+ //comparação usando if else população
+
+ if (populacao > populacao2) {
+    printf("A carta 1 (fortaleza) venceu!\n");
+    }
+
+else  {
+    printf("A carta 2 (salvador) venceu!\n");
+}
+
+
+//comparação usando if else area
+
+ if (area > area2) {
+    printf("A carta 1 (fortaleza) venceu!\n");
+    }
+
+else  {
+    printf("A carta 2 (salvador) venceu!\n");
+}
+
+
+
+//comparação usando if else pib
+
+ if (pib > pib2) {
+    printf("A carta 1 (fortaleza) venceu!\n");
+    }
+
+else  {
+    printf("A carta 2 (salvador) venceu!\n");
+}
+
+
+//comparação usando if else pontos turisticos
+
+
+ if (pontos_turisticos > pontos_turisticos2) {
+    printf("A carta 1 (fortaleza) venceu!\n");
+    }
+
+else  {
+    printf("A carta 2 (salvador) venceu!\n");
+}
+
+
+
  
 
-
- 
- 
-
-
-     return 0;
+    return 0;
 
      
      }

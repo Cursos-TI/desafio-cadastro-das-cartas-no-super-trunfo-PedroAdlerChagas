@@ -17,6 +17,7 @@
  float densidade_populacional;
  float pib_per_capita;
  float super_poder;
+ int opcao;
 
  densidade_populacional = (float) populacao / area;
 
@@ -167,6 +168,45 @@ else  {
 else  {
     printf("A carta 2 (salvador) venceu!\n");
 }
+
+printf("______________________________\n");
+
+
+
+printf("**Menu principal**\n");
+printf("1 - comaparar area1 com area2\n");
+printf("2 - comaparar população1 com população2\n");
+printf("3 - comaparar pib1 com pib2\n");
+printf("4 - comaparar densidade populacional1 com densidade populacional2\n");
+printf("5 - comaparar pib per capita1 com pib per capita2\n");
+printf("6 - comaparar super poder1 com super poder2\n");
+printf("Escolha uma opção:\n");
+scanf("%d", &opcao);
+
+switch (opcao) {
+    case 1:
+      printf("area1 < area2 (carta 2 venceu)\n");
+      break;
+    case 2:
+      printf("população1 > população2 (carta 1 venceu)\n");
+      break;
+    case 3:
+      printf("pib1 < pib2 (carta 1 venceu)\n");
+      break;
+    case 4:
+      printf("densidade populacional1 > densidade populacionak2 (carta 1 venceu)\n");
+      break;
+    case 5:
+      printf("pib per capita1 < pib per capita2 (carta 2 venceu)\n");
+      break;
+    case 6:
+      printf("super poder1 > super poder2 (carta 1 venceu)\n");
+      break;
+
+      default:
+      printf("Opção inválida. Tente novamente.\n");
+      
+  }
 
 
 

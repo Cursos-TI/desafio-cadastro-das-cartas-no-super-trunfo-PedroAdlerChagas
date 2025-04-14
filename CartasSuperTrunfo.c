@@ -53,7 +53,7 @@
 
 
 
- //saida da carta1
+ //saida da carta 1
 
  printf("Estado: %c\n", estado);
  printf("codigo: %s\n", codigo);
@@ -71,7 +71,7 @@
 
 
 
- //saida da carta2
+ //saida da carta 2
 
  printf("Estado: %c\n", estado2);
  printf("codigo: %s\n", codigo2);
@@ -172,47 +172,59 @@ else  {
 printf("______________________________\n");
 
 
+//Menu interarivo
+
 
 printf("**Menu principal**\n");
 printf("1 - comaparar area1 com area2\n");
 printf("2 - comaparar população1 com população2\n");
 printf("3 - comaparar pib1 com pib2\n");
-printf("4 - comaparar densidade populacional1 com densidade populacional2\n");
-printf("5 - comaparar pib per capita1 com pib per capita2\n");
-printf("6 - comaparar super poder1 com super poder2\n");
 printf("Escolha uma opção:\n");
 scanf("%d", &opcao);
 
-switch (opcao) {
-    case 1:
-      printf("area1 < area2 (carta 2 venceu)\n");
-      break;
-    case 2:
-      printf("população1 > população2 (carta 1 venceu)\n");
-      break;
-    case 3:
-      printf("pib1 < pib2 (carta 1 venceu)\n");
-      break;
-    case 4:
-      printf("densidade populacional1 > densidade populacionak2 (carta 1 venceu)\n");
-      break;
-    case 5:
-      printf("pib per capita1 < pib per capita2 (carta 2 venceu)\n");
-      break;
-    case 6:
-      printf("super poder1 > super poder2 (carta 1 venceu)\n");
-      break;
-
-      default:
-      printf("Opção inválida. Tente novamente.\n");
       
+ switch (opcao)
+ {
+ case 1:
+ if (area > area2) {
+  printf("A carta 1 (fortaleza) venceu!\n");
   }
 
+else  {
+  printf("A carta 2 (salvador) venceu!\n");
+}
+  break;
 
+ case 2 :
+  
+ if (populacao > populacao2) {
+  printf("A carta 1 (fortaleza) venceu!\n");
+  }
 
+else  {
+  printf("A carta 2 (salvador) venceu!\n");
+}
+  break;
+
+ case 3:
+ if (pib > pib2) {
+  printf("A carta 1 (fortaleza) venceu!\n");
+  }
+
+else  {
+  printf("A carta 2 (salvador) venceu!\n");
+}
+  break;
  
+ 
+ default:
+ printf("Opcao invalida");
+  break;
+ }
 
-    return 0;
+
+
+  return 0;
 
      
      }

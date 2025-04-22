@@ -18,6 +18,10 @@
  float pib_per_capita;
  float super_poder;
  int opcao;
+ int primeiro_atributo;
+ int segundo_atributo;
+ int resultado;
+ int resultado2;
 
  densidade_populacional = (float) populacao / area;
 
@@ -173,7 +177,7 @@ printf("______________________________\n");
 
 
 //Menu interarivo
-
+//desafio aventureiro
 
 printf("**Menu principal**\n");
 printf("1 - comaparar area1 com area2\n");
@@ -218,9 +222,97 @@ else  {
  
  
  default:
- printf("Opcao invalida");
+ printf("Opcao invalida\n");
   break;
  }
+
+ printf("______________________________\n");
+
+
+ //desafio mestre
+
+ printf("*Bem-vindo ao jogo!*\n");
+ printf("Para começar escolha dois atributos para a comparação!\n");
+ printf("1- PIB (carta 1)\n");
+ printf("2- Área (carta 1)\n");
+ printf("Escolha o primeiro atributo:\n");
+ scanf("%d", &primeiro_atributo);
+
+ switch (primeiro_atributo)
+ {
+ case 1:
+  printf("voce escolheu o atributo PIB\n");
+  resultado = (pib > pib2);
+  
+  break;
+
+  case 2:
+  printf("voce escolheu o atributo AREA\n");
+  resultado = (area > area2);
+
+  break;
+ 
+ default:
+  break;
+ }
+
+
+ printf("1- PIB2 (carta 2)\n");
+ printf("2- Área2 (carta 2)\n");
+ printf("Escolha o segundo atributo:\n");
+ scanf("%d", &segundo_atributo);
+
+ if (primeiro_atributo != segundo_atributo)
+ {
+  printf("Escolha um atributo igual para comparar ");
+ } else {
+   
+  switch (segundo_atributo)
+ {
+ case 1:
+  printf("você escolheu o atributo PIB2\n");
+  resultado2 = (pib > pib2);
+  
+  break;
+
+  case 2:
+  printf("Você escolheu o atributo AREA2\n");
+  resultado2 = (area > area2);
+
+  break;
+ 
+ default:
+  break;
+ }
+
+}
+
+if (resultado)
+{
+  printf("A carta 1 VENCEU!\n");
+} else
+{
+  printf("A carta 2 VENCEU!");
+}
+
+
+ 
+  
+ 
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
 
 
 
